@@ -5,9 +5,9 @@ POST http://localhost:5000/api/users/
 Content-Type: application/json
 
 {   
-    "emaisl": "alon@gmail.com",
+    "email": "alon@gmail.com",
     "password": "12345",
-    "name": "NISIM"
+    "name": "Alon"
 }
 
 
