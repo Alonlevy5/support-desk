@@ -21,3 +21,11 @@ Content-Type: application/json
     "password": "12345"
 }
 
+###
+//  -------------------  Me ------------------------
+GET http://localhost:5000/api/users/me
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWUzYzA5ZGRkNDAzZjVlZDU5YjNjYSIsImlhdCI6MTY1NDUzODQxNCwiZXhwIjoxNjU1NDAyNDE0fQ.3aUajy19aop6uVTnImxvdnbB5_XYAMx1RdBxJKHDAIk
+Content-Type: application/json
+
+
+
