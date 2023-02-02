@@ -28,4 +28,58 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWUzYzA5Z
 Content-Type: application/json
 
 
+###
+//  -------------------  Get Tickets ------------------------
+GET http://localhost:5000/api/tickets/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWUzYzA5ZGRkNDAzZjVlZDU5YjNjYSIsImlhdCI6MTY3NTM0MDEyOCwiZXhwIjoxNjc2MjA0MTI4fQ.tj5BuxhNNp5DSSrYK_z4tMnfMAoyd4dBwFvLKLKN2No
 
+{
+
+}
+
+
+###
+//  -------------------  Get Ticket by ID ------------------------
+GET http://localhost:5000/api/tickets/63dbb0b3f520a34bed94cb51
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWUzYzA5ZGRkNDAzZjVlZDU5YjNjYSIsImlhdCI6MTY3NTM0MDEyOCwiZXhwIjoxNjc2MjA0MTI4fQ.tj5BuxhNNp5DSSrYK_z4tMnfMAoyd4dBwFvLKLKN2No
+
+{
+}
+
+###
+
+//  -------------------  Update Ticket BY ID ------------------------
+PUT http://localhost:5000/api/tickets/63dbb0b3f520a34bed94cb51
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWUzYzA5ZGRkNDAzZjVlZDU5YjNjYSIsImlhdCI6MTY3NTM0MDEyOCwiZXhwIjoxNjc2MjA0MTI4fQ.tj5BuxhNNp5DSSrYK_z4tMnfMAoyd4dBwFvLKLKN2No
+
+{
+    "product": "iPad",
+    "description": "iPad not working now"
+}
+
+###
+
+
+//  -------------------  Delete Ticket BY ID ------------------------
+DELETE  http://localhost:5000/api/tickets/63dbb0b3f520a34bed94cb51
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWUzYzA5ZGRkNDAzZjVlZDU5YjNjYSIsImlhdCI6MTY3NTM0MDEyOCwiZXhwIjoxNjc2MjA0MTI4fQ.tj5BuxhNNp5DSSrYK_z4tMnfMAoyd4dBwFvLKLKN2No
+
+{
+
+}
+
+###
+
+//  -------------------  Create Ticket  ------------------------
+POST http://localhost:5000/api/tickets/
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWUzYzA5ZGRkNDAzZjVlZDU5YjNjYSIsImlhdCI6MTY3NTM0MDEyOCwiZXhwIjoxNjc2MjA0MTI4fQ.tj5BuxhNNp5DSSrYK_z4tMnfMAoyd4dBwFvLKLKN2No
+
+{
+    "product": "iPhone",
+    "description": "Not turning on"
+}
