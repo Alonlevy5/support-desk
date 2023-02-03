@@ -5,6 +5,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { login, reset } from '../features/auth/authSlice';
 import { useNavigate } from 'react-router-dom';
 import Spinner from '../components/Spinner';
+import { BackButton } from '../components/BackButton';
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -57,6 +58,7 @@ function Login() {
   return (
     <>
       <section className="heading">
+        <BackButton url={'/'}></BackButton>
         <h1>
           <FaSignInAlt /> Login
         </h1>

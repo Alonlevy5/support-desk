@@ -5,6 +5,7 @@ import { toast } from 'react-toastify';
 import { useSelector, useDispatch } from 'react-redux';
 import { register, reset } from '../features/auth/authSlice';
 import Spinner from '../components/Spinner';
+import { BackButton } from '../components/BackButton';
 
 function Register() {
   const [formData, setFormData] = useState({
@@ -18,18 +19,13 @@ function Register() {
 
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { user, isError, isSuccess, isLoading, message } = useSelector(
-    (state) => state.auth
+  const { user, isLoading, isSuccess, message, isError } = useSelector(
+    (state) => state.auth         
   );
 
   useEffect(() => {
     if (isError) {
       toast.error(message);
-    }
-
-    //Redirec when logged in
-    if (isSuccess || user) {
-      navigate('/');
     }
 
     dispatch(reset());
@@ -54,6 +50,7 @@ function Register() {
         password,
       };
       dispatch(register(userData));
+      navigate('/');
     }
   };
 
@@ -64,6 +61,7 @@ function Register() {
   return (
     <>
       <section className="heading">
+        <BackButton url={'/'}/>
         <h1>
           <FaUser /> Register {user}
         </h1>
