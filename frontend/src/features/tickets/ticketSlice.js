@@ -1,7 +1,7 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import ticketService from './ticketService';
 
-const user = JSON.parse(localStorage.getItem('user'));
+//const user = JSON.parse(localStorage.getItem('user'));
 
 const initialState = {
   tickets: [],
