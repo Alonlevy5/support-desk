@@ -14,7 +14,7 @@ function NewTicket() {
 
   const [name] = useState(user.name);
   const [email] = useState(user.email);
-  const [product, setProduct] = useState('');
+  const [product, setProduct] = useState('iPhone');
   const [description, setDescription] = useState('');
 
   const dispatch = useDispatch();
@@ -42,7 +42,8 @@ function NewTicket() {
   }
 
   return (
-    <><BackButton url='/'/>
+    <>
+      <BackButton url="/" />
       <section className="heading">
         <h1>Create New Ticket</h1>
         <p>Please fill out the form below</p>
