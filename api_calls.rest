@@ -83,3 +83,23 @@ Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWUzYzA5Z
     "product": "iPhone",
     "description": "Not turning on"
 }
+
+###
+//  -------------------  Get Notes ------------------------
+GET http://localhost:5000/api/tickets/63dbb0c0f520a34bed94cb55/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWUzYzA5ZGRkNDAzZjVlZDU5YjNjYSIsImlhdCI6MTY3NTM0MDEyOCwiZXhwIjoxNjc2MjA0MTI4fQ.tj5BuxhNNp5DSSrYK_z4tMnfMAoyd4dBwFvLKLKN2No
+
+{
+
+}
+
+###
+//  -------------------  Add Note ------------------------
+POST http://localhost:5000/api/tickets/63dbb0c0f520a34bed94cb55/notes
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOWUzYzA5ZGRkNDAzZjVlZDU5YjNjYSIsImlhdCI6MTY3NTM0MDEyOCwiZXhwIjoxNjc2MjA0MTI4fQ.tj5BuxhNNp5DSSrYK_z4tMnfMAoyd4dBwFvLKLKN2No
+
+{
+    "text": "I need Help"
+}
