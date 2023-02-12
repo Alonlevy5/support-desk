@@ -18,6 +18,11 @@ app.use(express.urlencoded({ extended: false }));
 app.use('/api/users', require('./routes/userRoutes'));
 app.use('/api/tickets', require('./routes/ticketRoutes'));
 
+// Create GET request
+app.get("/alon", (req, res) => {
+  res.send("Express on Vercel");
+});
+
 // Serve FrontEnd
 if (process.env.NODE_ENV == 'production') {
   // Set build folder as static
